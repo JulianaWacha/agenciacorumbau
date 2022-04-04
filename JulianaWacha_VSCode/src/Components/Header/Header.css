@@ -1,0 +1,134 @@
+body{
+	margin: 0;
+	background-size: cover;
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px; 
+}
+
+
+h1,h2,h3,h4, h5, p, span{
+	margin: 0;
+	color: #FFF;
+	text-shadow: #0000CD 1px 1px 1px, #0000CD -1px 1px 1px, #0000CD 1px -1px 1px, #0000CD -1px -1px 1px;
+}
+.container{
+	max-width: 1920;
+	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+header{
+	position: relative;
+	top: 0;
+	height: auto;
+	width: 100%;
+	}
+
+/* nav */
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	background-color: #43d6e0;
+	font-size: 30px;
+	border-bottom: 1px solid #0d6e75;
+	
+}
+ nav:after {
+	 clear: both;
+	 content: "";
+	 display: block;
+}
+ .nav-container{
+	max-width: 1200px;
+	position: relative;
+	margin-right: auto;
+	margin-left:auto;
+}
+
+#logo{
+	width: 60px;
+	height: 60px;
+	margin-top: 25px;
+
+}
+
+.nav-container ul{
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+}
+
+.nav-container ul li{
+	list-style: none;
+	float: left;
+	margin: 0 15px;
+}
+
+.nav-container li a {
+	text-decoration: none;
+	color:#1a3e74 ;
+	transition: .5s;
+}
+
+.nav-container li a:hover {
+	color:#3381F3 ;
+}
+/*banner  */
+#main-banner-home{
+	background: no-repeat center/cover url('../../assets/img/banner.jpeg') ;
+	
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px;  
+	
+	 
+} 
+
+#search-promotions{
+	position: relative;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15em;
+	padding-bottom: 15px;
+	text-align: center;
+	
+}
+#search-promotions h1{
+	font-size: 40px;
+
+}
+
+#search-promotions p{
+	margin-top: 30px;
+	margin-bottom: 60px;
+	font-size: 18px;
+	font-weight: 300;
+}
+#search-promotions input, #search-promotions select{
+	background-color: #fff;
+	border-radius: 5px;
+	border-color: transparent;
+	padding: 10px 20px;
+	font-size: 18px;
+	margin: 0 10px;
+}
+
+#search-promotions input[type=submit]{
+	background-color: #3381F3;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.5s;
+}
+#search-promotions input[type=submit]:hover{
+	background-color: #2B79EB;
+
+}

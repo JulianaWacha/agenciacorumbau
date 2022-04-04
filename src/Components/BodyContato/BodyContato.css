@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+.contato-email{
+ text-align: center;
+}
+.container-contato{
+    text-align: center;
+}
+#main-banner-home{
+	background: no-repeat center/cover url('../../assets/img/banner.jpeg');
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px;  
+   } 
+#map{
+    text-align: center;
+}

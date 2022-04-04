@@ -1,13 +1,320 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+
+html{
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* no body, só tem o margin:0; coloquei parte do banner aqui 
+porque não queria funcionar a imagem de plano de fundo, mas por aqui,
+ficou em todas as pagina... :(
+ */
+body{
+	margin: 0;
+	background-size: cover;
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px; 
+}
+
+
+h1,h2,h3,h4, h5, p, span{
+	margin: 0;
+	color: #FFF;
+	text-shadow: #0000CD 1px 1px 1px, #0000CD -1px 1px 1px, #0000CD 1px -1px 1px, #0000CD -1px -1px 1px;
+}
+
+
+.container{
+	max-width: 1920;
+	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*hide on desktop, ainda não fiz html */
+.nav-container .btn-menumobile{
+	display: none;
+}
+/* header */
+header{
+	position: relative;
+	top: 0;
+	height: auto;
+	width: 100%;
+	}
+
+/* nav */
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	background-color: #43d6e0;
+	font-size: 30px;
+	border-bottom: 1px solid #0d6e75;
+	
+}
+ nav:after {
+	 clear: both;
+	 content: "";
+	 display: block;
+}
+ .nav-container{
+	max-width: 1200px;
+	position: relative;
+	margin-right: auto;
+	margin-left:auto;
+}
+
+.nav-container ul{
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+}
+
+.nav-container ul li{
+	list-style: none;
+	float: left;
+	margin: 0 15px;
+}
+
+.nav-container li a {
+	text-decoration: none;
+	color:#1a3e74 ;
+	transition: .5s;
+}
+
+.nav-container li a:hover {
+	color:#3381F3 ;
+}
+
+.nav-container > img{
+	width: 60px;
+	height: 60px;
+	margin-top: 25px;
+}
+/*banner  */
+#main-banner-home{
+	/*background-image: url('../img/banner.jpeg') no-repeat;
+	background-size: cover;
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px;  
+	 */
+	 color: #0000CD;
+} 
+
+#search-promotions{
+	position: relative;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15em;
+	padding-bottom: 15px;
+	text-align: center;
+	
+}
+#search-promotions h1{
+	font-size: 40px;
+
+}
+
+#search-promotions p{
+	margin-top: 30px;
+	margin-bottom: 60px;
+	font-size: 18px;
+	font-weight: 300;
+}
+#search-promotions input, #search-promotions select{
+	background-color: #fff;
+	border-radius: 5px;
+	border-color: transparent;
+	padding: 10px 20px;
+	font-size: 18px;
+	margin: 0 10px;
+}
+
+#search-promotions input[type=submit]{
+	background-color: #3381F3;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.5s;
+}
+#search-promotions input[type=submit]:hover{
+	background-color: #2B79EB;
+
+}
+/* Seção de ultimas promoções  */
+
+#latest-promotions-container{
+	text-align: center;
+	padding: 100px 0;
+}
+.wrapper{
+	max-width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#latest-promotions-container h1{
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+#latest-promotions-container ul{
+	padding: 0;
+	border: 1px solid #ccc ;
+}
+
+#latest-promotions-container ul li{
+	list-style: none;
+	text-align: left;
+	border-bottom: solid 1px #ccc;
+	height: 80px;
+	position: relative;
+}
+#latest-promotions-container ul li:last-child{
+	border: none;
+}
+.clickarea{
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+/* img destiny-box*/
+.destiny-box{
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	padding-left: 1%;
+}
+.destiny-box img{
+	width: 100px;
+	margin-top: 2.5px;
+}
+.destiny-info{
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 10px;
+	text-align: left;
+	position: absolute;
+}
+
+.destiny-info h3{
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.destiny-info p{
+	font-weight: bold;
+}
+
+/* locality */
+.locality{
+	color: #6d6d6d;
+	display: inline-block;
+	width: 25%;
+	position: absolute;
+	height: 100%;
+	margin-left: 25px;
+	line-height: 80px;
+}
+.locality i, locality p{
+	display: inline-block;
+}
+ .locality i {
+	 margin-right: 5px;
+ }
+
+ .destiny-type{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	padding-top: 30px;
+	right: 1%;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	
+ }
+
+ .destiny-type span{
+	 display: block;
+	 width: 100px;
+	 height: 20px;
+	 line-height: 20px;
+	 color: #FFF;
+ }
+.carro{
+	background-color: #3381F3;
+	
+}
+.barco{
+	background-color: #0000CD ;
+}
+.btndestiny-container{
+	margin-top: 50px;
+}
+.btndestiny{
+	text-transform: uppercase;
+	background-color: #FFF;
+	color: #3381F3;
+	border: 2px solid #3381F3;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-weight: bold;
+	transition: 0.05s;
+}
+.btndestiny:hover{
+	background-color: #3381F3;
+	color: #FFF;
+}
+
+#sendproposal-container{
+	/* Por enquanto, não vou colocar imagem, mas o caminho seria
+ background: url('../img/IMAGEMqUEeUESCOLHER') no-repeat;
+	*/
+	background-size: cover;
+	background-position: 0 25%;
+	padding: 15em 0;
+}
+#sendproposal-container h2, #sendproposal-container p {
+	width: 600px;
+	color: #FFF;
+}
+#sendproposal-container h2{
+	font-size: 36px;
+	margin-bottom: 50px;
+	
+}	
+#sendproposal-container p{
+	font-size: 18px;
+	margin-bottom: 50px;
+	
+}	
+.ligth-btn{
+	background-color: #FFF;
+	border: 2px solid #FFF;
+	color:#3381F3 ;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: 0.05s;
+}
+.ligth-btn:hover{
+	background-color: transparent;
+	color: #FFF;
 }

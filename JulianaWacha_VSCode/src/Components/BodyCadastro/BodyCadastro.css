@@ -1,0 +1,27 @@
+h3{
+    text-align: center;
+}
+.formcontato {
+	margin-left : 200px;	
+} 
+#main-banner-home{
+	background: no-repeat center/cover url('../../assets/img/banner.jpeg');
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px;  
+} 
+.ligth-btn{
+	background-color: #FFF;
+	border: 2px solid #FFF;
+	color:#3381F3 ;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 8px;
+	transition: 0.05s;
+}
+.ligth-btn:hover{
+	background-color: transparent;
+	color: #FFF;
+}
